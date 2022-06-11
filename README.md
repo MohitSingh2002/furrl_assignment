@@ -1,16 +1,8 @@
-# furrl_assignment
+# Furrl Assignment
 
-A new Flutter project.
+### Download [APK](https://github.com/MohitSingh2002/furrl_assignment/releases/download/v1.0/app-release.apk)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Screenshots:
+|Welcome |Generate ID | Authors |
+|:--------------------:|:--------------------:|:--------------------:|
+| ![Screenshot_20220612_002344](https://user-images.githubusercontent.com/62237653/173201472-cb4e35f7-d9ce-4a7b-bc71-803ebe50ea89.png)|![Screenshot_20220612_002401](https://user-images.githubusercontent.com/62237653/173201481-195a6146-20a1-4435-9c4e-4eebed393dad.png)|![Screenshot_20220612_002413](https://user-images.githubusercontent.com/62237653/173201523-4a99c550-c112-4f4f-9b79-bb33ae551e34.png)|
