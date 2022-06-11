@@ -9,6 +9,7 @@ class AppStyle {
   static const Color red = Color(0xffff0000);
   static const Color transparent = Colors.transparent;
   static const Color blue = Color.fromRGBO(0, 142, 195, 1);
+  static const Color grey = Color.fromRGBO(217, 217, 217, 1);
 
   static TextStyle generalTextStyle(
       {Color color = black,

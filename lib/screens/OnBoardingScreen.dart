@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:furrl_assignment/utils/AppManager.dart';
 import 'package:furrl_assignment/utils/AppStyle.dart';
+import 'package:furrl_assignment/utils/Routes.dart';
 import 'package:furrl_assignment/utils/StringsManager.dart';
 import 'package:furrl_assignment/utils/Utils.dart';
 import 'package:furrl_assignment/widgets/AuthField.dart';
@@ -90,7 +91,9 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       horizontal: Utils.getWidth(context) / 10,
                     ),
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, Routes.generateId);
+                      },
                       child: Center(
                         child: Text(
                           StringsManager.signUp,
