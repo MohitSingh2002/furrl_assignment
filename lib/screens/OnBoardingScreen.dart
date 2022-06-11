@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:furrl_assignment/utils/AppManager.dart';
 import 'package:furrl_assignment/utils/AppStyle.dart';
 import 'package:furrl_assignment/utils/Routes.dart';
@@ -24,6 +25,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown,]);
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
