@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:furrl_assignment/models/Author.dart';
 import 'package:furrl_assignment/services/ApiService.dart';
-import 'package:furrl_assignment/utils/AppManager.dart';
 import 'package:furrl_assignment/utils/AppStyle.dart';
 import 'package:furrl_assignment/utils/Utils.dart';
 import 'package:furrl_assignment/widgets/AuthorCard.dart';

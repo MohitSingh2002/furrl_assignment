@@ -3,8 +3,8 @@ import 'package:furrl_assignment/services/ApiService.dart';
 import 'package:furrl_assignment/utils/AppManager.dart';
 import 'package:furrl_assignment/utils/AppStyle.dart';
 import 'package:furrl_assignment/utils/Routes.dart';
+import 'package:furrl_assignment/utils/StringsManager.dart';
 import 'package:furrl_assignment/utils/Utils.dart';
-import 'package:furrl_assignment/widgets/AuthField.dart';
 import 'package:furrl_assignment/widgets/BgImageWidget.dart';
 
 class GenerateIdScreen extends StatefulWidget {
@@ -73,7 +73,7 @@ class _GenerateIdScreenState extends State<GenerateIdScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Generate ID',
+                StringsManager.generateId,
                 style: AppStyle.generalTextStyle(
                   fontSize: AppFontSize.s18,
                   fontWeight: AppFontWeight.bold,
@@ -92,7 +92,7 @@ class _GenerateIdScreenState extends State<GenerateIdScreen> {
                   },
                   child: Center(
                     child: Text(
-                      'Click Me',
+                      StringsManager.clickMe,
                       style: AppStyle.generalTextStyle(
                         color: AppStyle.white,
                         fontSize: AppFontSize.s18,

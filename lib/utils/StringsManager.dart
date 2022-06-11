@@ -12,4 +12,9 @@ class StringsManager {
   static const String alreadyHaveAccount = 'Already have account ? ';
   static const String signIn = 'Sign In!';
 
+  // GenerateId Screen.
+  static const String generateId = 'Generate ID';
+  static const String clickMe = 'Click Me';
+  static const String task3 = 'Task-3';
+
 }
