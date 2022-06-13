@@ -16,7 +16,8 @@ class AuthorsListScreen extends StatefulWidget {
 class _AuthorsListScreenState extends State<AuthorsListScreen> {
 
   bool isLoading = false;
-  List<Author> authorsList = [];
+  List<Author> authorsList = [], finalAuthorsList = [];
+  late ScrollController controller;
 
   void showLoading() {
     setState(() {
@@ -35,6 +36,7 @@ class _AuthorsListScreenState extends State<AuthorsListScreen> {
     ApiService().getAuthorsList().then((value) {
       setState(() {
         authorsList = value;
+        finalAuthorsList = value;
       });
       hideLoading();
     }).catchError((onError) {
@@ -42,10 +44,31 @@ class _AuthorsListScreenState extends State<AuthorsListScreen> {
     });
   }
 
+  void loadMore() {
+    if (controller.position.maxScrollExtent == controller.offset) {
+      addDataToAuthorsList();
+    }
+  }
+
+  Future addDataToAuthorsList() async {
+    setState(() {
+      authorsList.addAll(Utils.list(finalAuthorsList));
+    });
+  }
+
   @override
   void initState() {
     super.initState();
     getAuthorsList();
+    setState(() {
+      controller = ScrollController()..addListener(loadMore);
+    });
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
   }
 
   @override
@@ -58,6 +81,7 @@ class _AuthorsListScreenState extends State<AuthorsListScreen> {
               color: AppStyle.blue,
             ),
           ) : ListView.builder(
+            controller: controller,
             itemCount: authorsList.length,
             itemBuilder: (_, index) {
               Author author = authorsList.elementAt(index);
