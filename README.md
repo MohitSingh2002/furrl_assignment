@@ -1,6 +1,6 @@
 # Furrl Assignment
 
-### Download [APK](https://github.com/MohitSingh2002/furrl_assignment/releases/download/v1.0/app-release.apk)
+### Download [APK](https://github.com/MohitSingh2002/furrl_assignment/releases/download/v1.1/app-release.apk)
 
 ### Screenshots:
 |Welcome |Generate ID | Authors |
